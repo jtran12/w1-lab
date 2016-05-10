@@ -1,0 +1,72 @@
+body {
+	background-color: #990000;
+}
+
+a:link {
+	color: #0000ff;
+	
+}
+
+/* visited link */
+a:visited {
+    color: #660066;
+}
+s
+a:hover {
+	color: #0000ff;
+	background-color: #ffffff;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    background-color: #ffffff;
+}
+
+nav > a {
+	background-color: #009933;
+}
+
+h1, h2, h3 {
+	background-color: #663300;
+}
+
+img:after {
+	content: url('http://bulbapedia.bulbagarden.net/wiki/Mew_(Pok%C3%A9mon)');
+}
+
+.heading {
+	text-align: center;
+}
+
+/* The animation code */
+@keyframes colour-changer {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+#title {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#description{
+    background-color: red;
+    animation-name: colour-changer;
+    animation-duration: 4s;
+}
+
+@keyframes slide-out {
+    0%   {background-color: white; top:-100px;}
+    100% {background-color: #009933; top:0px;}
+}
+
+/* The element to apply the animation to */
+nav {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: slide-out;
+    animation-duration: 4s;
+}
